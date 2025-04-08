@@ -20,4 +20,8 @@ export class DepartmentsComponent implements OnInit {
   ngOnInit(): void {
     this.departments = this.departmentsService.departments;
 }
+
+goToDepartment(departmentId: string): void {
+  this.router.navigate(['./timesheet', {id: departmentId}]);
+}
 }
