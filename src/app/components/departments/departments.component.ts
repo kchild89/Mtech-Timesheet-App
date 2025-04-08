@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DepartmentsService } from '../../services/departments.service';
 import { Department } from '../../interfaces/department';
+import { Router } from 'express';
 
 @Component({
   selector: 'app-departments',
@@ -9,10 +10,11 @@ import { Department } from '../../interfaces/department';
   styleUrl: './departments.component.scss'
 })
 export class DepartmentsComponent implements OnInit {
-  departments: Department[] | undefined;
+  departments: Department[];
 
   constructor(
-    private departmentsService: DepartmentsService
+    private departmentsService: DepartmentsService,
+    private router: Router
   ) { }
   
   ngOnInit(): void {
