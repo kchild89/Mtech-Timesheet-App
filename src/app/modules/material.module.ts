@@ -5,6 +5,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -17,14 +19,20 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatIconModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule { }
