@@ -21,7 +21,8 @@ export class DepartmentsComponent implements OnInit {
     this.departments = this.departmentsService.departments;
 }
 
-goToDepartment(departmentId: string): void {
-  this.router.navigate(['./timesheet', {id: departmentId}]);
+  goToDepartment(departmentId: string): void {
+    this.router.navigate(['./timesheet', {id: departmentId}]);
 }
+
 }
