@@ -5,14 +5,14 @@ import { AnalyticsComponent } from '../components/analytics/analytics.component'
 import { TimesheetComponent } from '../components/timesheet/timesheet.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'departments', pathMatch: 'full' },
+  { path: '', redirectTo: 'departments', pathMatch: 'full' },
   { path: 'departments', component: DepartmentsComponent },
   { path: 'timesheet', component: TimesheetComponent },
-  { path: 'analytics', component: AnalyticsComponent }
+  { path: 'analytics', component: AnalyticsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

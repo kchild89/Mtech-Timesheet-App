@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   selector: 'app-departments',
   standalone: false,
   templateUrl: './departments.component.html',
-  styleUrl: './departments.component.scss'
+  styleUrl: './departments.component.scss',
 })
 export class DepartmentsComponent implements OnInit {
   departments: Department[];
@@ -15,14 +15,13 @@ export class DepartmentsComponent implements OnInit {
   constructor(
     private departmentsService: DepartmentsService,
     private router: Router
-  ) { }
-  
+  ) {}
+
   ngOnInit(): void {
     this.departments = this.departmentsService.departments;
-}
+  }
 
   goToDepartment(departmentId: string): void {
-    this.router.navigate(['./timesheet', {id: departmentId}]);
-}
-
+    this.router.navigate(['./timesheet', { id: departmentId }]);
+  }
 }
