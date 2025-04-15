@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Department } from '../../interfaces/department';
 import { DepartmentsService } from '../../services/departments.service';
 import { AbstractControl, FormControl, ValidatorFn } from '@angular/forms';
-import { Employee } from '../../interfaces/employee.';
+import { Employee } from '../../interfaces/employee';
 
 @Component({
   selector: 'app-timesheet',
