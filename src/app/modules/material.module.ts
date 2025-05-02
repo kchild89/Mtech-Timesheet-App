@@ -10,6 +10,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [],
@@ -26,6 +29,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatInputModule,
     FormsModule,
     MatTabsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
   ],
   exports: [
     MatToolbarModule,
